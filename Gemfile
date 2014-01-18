@@ -12,7 +12,9 @@ gem 'jbuilder', '~> 1.2'              # Build JSON APIs with ease. Read more: ht
 gem 'haml-rails'
 
 group :test, :development do
-  #nothing
+  gem 'rspec-rails'                   # Rspec for Ruby testing
+  gem 'jasmine'                       # Jasmine for JS testing
+  gem 'teaspoon'                      # Teaspoon for running Jasmine tests
 end
 
 group :doc do
