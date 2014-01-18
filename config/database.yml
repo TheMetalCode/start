@@ -1,0 +1,13 @@
+development:
+    adapter: mysql2
+    database: rails4_start_development
+    username: thecity
+    password: thecity
+    socket: /private/tmp/mysql.sock 
+       
+test:
+    adapter: mysql2
+    database: rails4_start_test
+    username: thecity
+    password: thecity 
+    socket: /private/tmp/mysql.sock
