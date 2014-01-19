@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+# Also using rubygems-bundler outside of Gemfile control to obviate 'bundle exec'
 
 gem 'coffee-rails', '~> 4.0.0'        # Use CoffeeScript for .js.coffee assets and views
 gem 'haml-rails'                      # Markup haiku
@@ -13,10 +13,15 @@ gem 'uglifier', '>= 1.3.0'            # Use Uglifier as compressor for JavaScrip
 
 
 group :test, :development do
-  gem 'rspec-rails'                   # Rspec for Ruby testing
-  gem 'jasmine'                       # Jasmine for JS testing
-  gem 'teaspoon'                      # Teaspoon for running Jasmine tests
   gem 'guard-rails'                   # Guard to run tests in a terminal everytime the file changes. ABT, Always Be Testing!
+  gem 'guard-rspec', require: false   # Run RSpec under Guard
+  gem 'guard-teaspoon'                # Run Teaspoon under Guard
+  gem 'jasmine'                       # Jasmine for JS testing
+  gem 'rb-fsevent'                    # OS X File Service events, used by Guard.
+  gem 'rspec-rails'                   # Rspec for Ruby testing
+  gem 'teaspoon'                      # Teaspoon for running Jasmine tests
+
+
 end
 
 group :doc do
