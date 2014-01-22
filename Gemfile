@@ -20,7 +20,7 @@ group :test, :development do
   gem 'rb-fsevent'                    # OS X File Service events, used by Guard.
   gem 'rspec-rails'                   # Rspec for Ruby testing
   gem 'teaspoon'                      # Teaspoon for running Jasmine tests
-
+  gem 'devise'                        # Flexible authentication solution for Rails based on Warden
 
 end
 
