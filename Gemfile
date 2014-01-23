@@ -21,7 +21,8 @@ group :test, :development do
   gem 'rspec-rails'                   # Rspec for Ruby testing
   gem 'teaspoon'                      # Teaspoon for running Jasmine tests
   gem 'devise'                        # Flexible authentication solution for Rails based on Warden
-
+  gem 'capybara'                      # Capybara tests web applications by simulating how a real user interacts with the app
+  gem 'cucumber-rails'                # As a user, with some gerhkins, I want pickles.
 end
 
 group :doc do
