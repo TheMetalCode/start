@@ -13,16 +13,18 @@ gem 'uglifier', '>= 1.3.0'                # Use Uglifier as compressor for JavaS
 
 
 group :test, :development do
+  gem 'capybara'                          # Capybara tests web applications by simulating how a real user interacts with the app
+  gem 'cucumber-rails', require: false    # As a user, with some gerhkins, I want pickles.
+  gem 'devise'                            # Flexible authentication solution for Rails based on Warden
   gem 'guard-rails'                       # Guard to run tests in a terminal everytime the file changes. ABT, Always Be Testing!
   gem 'guard-rspec', require: false       # Run RSpec under Guard
   gem 'guard-teaspoon'                    # Run Teaspoon under Guard
   gem 'jasmine'                           # Jasmine for JS testing
   gem 'rb-fsevent'                        # OS X File Service events, used by Guard.
+  gem 'therubyracer'                      # Javascript Engine
   gem 'rspec-rails'                       # Rspec for Ruby testing
   gem 'teaspoon'                          # Teaspoon for running Jasmine tests
-  gem 'devise'                            # Flexible authentication solution for Rails based on Warden
-  gem 'capybara'                          # Capybara tests web applications by simulating how a real user interacts with the app
-  gem 'cucumber-rails', require: false    # As a user, with some gerhkins, I want pickles.
+
 end
 
 group :doc do
