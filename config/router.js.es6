@@ -9,6 +9,11 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.resource('people', function() {
+    this.route('new');
+    this.route('show', {path: ':person_id'});
+    this.route('edit', {path: ':person_id/edit'});
+  });
 });
 
 export default Router;

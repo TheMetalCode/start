@@ -1,4 +1,9 @@
 Start::Application.routes.draw do
+  namespace :api do
+    namespace :v1 do
+      resources :people, except: [:new, :edit]
+    end
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
