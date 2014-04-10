@@ -9,6 +9,7 @@ gem 'jbuilder'                            # Build JSON APIs with ease. Read more
 gem 'jquery-rails'                        # Use jquery as the JavaScript library
 gem 'mysql2'                              # Use MySql as the database for Active Record
 gem 'rails', '~> 4.1'                     # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rename'                              # This will let you rename the app to what you actually want it to be
 gem 'sass-rails'                          # Use SCSS for stylesheets
 gem 'turbolinks'                          # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'therubyracer'                        # Javascript Engine

@@ -207,6 +207,8 @@ GEM
     rdoc (4.1.1)
       json (~> 1.4)
     ref (1.0.5)
+    rename (1.0.2)
+      rails (>= 3.0.0)
     rspec (2.14.1)
       rspec-core (~> 2.14.0)
       rspec-expectations (~> 2.14.0)
@@ -320,6 +322,7 @@ DEPENDENCIES
   pry-nav
   rails (~> 4.1)
   rb-fsevent
+  rename
   rspec-rails
   sass-rails
   sdoc
